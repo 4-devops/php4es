@@ -11,7 +11,7 @@ require_once(PRO_INC_DIR . '/log4php/Logger.php');
 
 
 Logger::configure(PRO_ROOT_DIR . '/log4php.xml');
-$logger = Logger::getLogger('php4es');
+$logger = Logger::getLogger('php4es_create_index');
 use Elasticsearch\ClientBuilder;
 
 function init_settings(&$settings)
@@ -19,17 +19,13 @@ function init_settings(&$settings)
     global $logger;
     if (!is_array($settings) || !isset($settings) || $settings == null)
     {
-        $logger -> warn('settings is invalid or null, default settings will be used');
+        $logger->warn('settings is invalid or null, default settings will be used');
         $settings = array();
     }
-    if(!isset($settings['number_of_shards']) || $settings['number_of_shards'] == null)
+    if(count($settings) == 0)
     {
         $settings['number_of_shards'] = 5;
-    }
-
-    if(!isset($settings['number_of_replicas']) || $settings['number_of_replicas'] == null)
-    {
-        $settings['number_of_shards'] = 2;
+        $settings['number_of_replicas'] = 2;
     }
 }
 
@@ -62,7 +58,11 @@ function create_es_index($es_index_name, $es_type_name, $mappings, $settings = n
                 ]
             ]
         ];
-        $response = $client->indices()->create($params);
-        $logger->info($response);
+        try {
+            $response = $client->indices()->create($params);
+            $logger->info($response);
+        } catch (Exception $e) {
+            $logger->error($e);
+        }
     }
 }

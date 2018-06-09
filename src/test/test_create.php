@@ -8,6 +8,7 @@
 
 require_once('../../bootstrap.php');
 require_once(PRO_MAIN_DIR . '/create.php');
+date_default_timezone_set('asia/shanghai');
 
 $mappings = [
     'f1' => [
@@ -18,4 +19,4 @@ $mappings = [
     ]
 ];
 
-create_es_index('test1', 'test1', $mappings);
+create_es_index('test', 'test', $mappings);

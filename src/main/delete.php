@@ -10,6 +10,7 @@ require_once '../../bootstrap.php';
 
 require_once PRO_INC_DIR . '/vendor/autoload.php';
 require_once PRO_INC_DIR . '/log4php/Logger.php';
+date_default_timezone_set('asia/shanghai');
 
 Logger::configure(PRO_ROOT_DIR . '/log4php.xml');
 
