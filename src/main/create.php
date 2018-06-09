@@ -4,7 +4,12 @@
  * User: zhulinfeng
  */
 
-require_once(PRO_ROOT_DIR . '/bootstrap.php');
+require_once('../../bootstrap.php');
+require_once(PRO_INC_DIR . '/vendor/autoload.php');
+require_once(PRO_INC_DIR . '/log4php/Logger.php');
+
+
+
 Logger::configure(PRO_ROOT_DIR . '/log4php.xml');
 $logger = Logger::getLogger('php4es');
 use Elasticsearch\ClientBuilder;
@@ -45,10 +50,16 @@ function create_es_index($es_index_name, $es_type_name, $mappings, $settings = n
         $client = ClientBuilder::create()->setHosts($es_params)->build();
         $params = [
             'index' => $es_index_name,
-            'type' => $es_type_name,
             'body' => [
                 'settings' => $settings,
-                'mappings' => $mappings
+                'mappings' => [
+                    $es_type_name => [
+                        '_source' => [
+                            'enabled' => true
+                        ],
+                        'properties' => $mappings
+                    ]
+                ]
             ]
         ];
         $response = $client->indices()->create($params);

@@ -5,7 +5,7 @@
         <layout class="LoggerLayoutPattern">
             <param name="conversionPattern" value="%date [%logger] %message%newline" />
         </layout>
-        <param name="file" value="logs/event.log" />
+        <param name="file" value="/Users/zhulinfeng/Desktop/phpProject/php4es/logs/event.log" />
     </appender>
 
     <root>
