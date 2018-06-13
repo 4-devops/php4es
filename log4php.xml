@@ -13,7 +13,7 @@
         <layout class="LoggerLayoutPattern" >
             <param name="ConversionPattern" value="[%date{Y-m-d H:i:s,u}] [%t] %-5p %l - %message%newline%ex"/>
         </layout>
-        <param name="file" value="/Users/zhulinfeng/Desktop/phpProject/php4es/logs/php-error.log.%s" />
+        <param name="file" value="/Users/zhulinfeng/Desktop/phpProject/php4es/logs/php.log.%s" />
         <!--param name="threshold" value="error"/-->
         <param name="append" value="true" />
         <param name="datePattern" value="Y-m-d" />

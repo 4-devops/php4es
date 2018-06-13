@@ -12,7 +12,8 @@ define('PRO_MAIN_DIR', PRO_ROOT_DIR . '/src/main');
 define('PRO_INC_DIR', PRO_ROOT_DIR . '/include');
 
 $es_params['hosts'] = [
-    'host' => '10.204.60.229',
+    #'host' => '10.204.60.229',
+    'host' => '192.168.253.12',
     'port' => '9200'
 ];
 

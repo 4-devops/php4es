@@ -1,0 +1,721 @@
+[2018-06-13 16:44:04,623] [2523] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:129) - 该次查询一共匹配 36 条
+[2018-06-13 16:44:04,623] [2523] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:130) - Array
+(
+    [took] => 20
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 36
+            [max_score] => 23.311893
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 7446
+                            [_score] => 23.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 7447
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 26
+                                    [line_number] => 
+                                    [speaker] => DUCHESS
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 14031
+                            [_score] => 23.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 14032
+                                    [play_name] => Alls well that ends well
+                                    [speech_number] => 41
+                                    [line_number] => 
+                                    [speaker] => PAROLLES
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 23090
+                            [_score] => 23.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 23091
+                                    [play_name] => A Comedy of Errors
+                                    [speech_number] => 81
+                                    [line_number] => 
+                                    [speaker] => LUCIANA
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 34158
+                            [_score] => 23.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 34159
+                                    [play_name] => Hamlet
+                                    [speech_number] => 165
+                                    [line_number] => 
+                                    [speaker] => HAMLET
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 41654
+                            [_score] => 23.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 41655
+                                    [play_name] => Henry VIII
+                                    [speech_number] => 32
+                                    [line_number] => 
+                                    [speaker] => KING HENRY VIII
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:45:32,839] [2529] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:129) - 该次查询一共匹配 0 条
+[2018-06-13 16:45:32,840] [2529] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:130) - Array
+(
+    [took] => 30
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 0
+            [max_score] => 
+            [hits] => Array
+                (
+                )
+
+        )
+
+)
+
+[2018-06-13 16:46:01,170] [2534] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:129) - 该次查询一共匹配 1 条
+[2018-06-13 16:46:01,171] [2534] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:130) - Array
+(
+    [took] => 14
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 1
+            [max_score] => 24.311893
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 14031
+                            [_score] => 24.311893
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 14032
+                                    [play_name] => Alls well that ends well
+                                    [speech_number] => 41
+                                    [line_number] => 
+                                    [speaker] => PAROLLES
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:46:49,342] [2539] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:129) - 该次查询一共匹配 1 条
+[2018-06-13 16:46:49,343] [2539] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:130) - Array
+(
+    [took] => 18
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 1
+            [max_score] => 7.520256
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 14031
+                            [_score] => 7.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 14032
+                                    [play_name] => Alls well that ends well
+                                    [speech_number] => 41
+                                    [line_number] => 
+                                    [speaker] => PAROLLES
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:47:04,326] [2544] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:129) - 该次查询一共匹配 0 条
+[2018-06-13 16:47:04,327] [2544] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:130) - Array
+(
+    [took] => 28
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 0
+            [max_score] => 
+            [hits] => Array
+                (
+                )
+
+        )
+
+)
+
+[2018-06-13 16:53:09,269] [2563] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:133) - 该次查询一共匹配 1 条
+[2018-06-13 16:53:09,269] [2563] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:134) - Array
+(
+    [took] => 16
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 1
+            [max_score] => 7.520256
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 14031
+                            [_score] => 7.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 14032
+                                    [play_name] => Alls well that ends well
+                                    [speech_number] => 41
+                                    [line_number] => 
+                                    [speaker] => PAROLLES
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:53:16,640] [2566] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:133) - 该次查询一共匹配 1 条
+[2018-06-13 16:53:16,641] [2566] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:134) - Array
+(
+    [took] => 16
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 1
+            [max_score] => 7.520256
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 14031
+                            [_score] => 7.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 14032
+                                    [play_name] => Alls well that ends well
+                                    [speech_number] => 41
+                                    [line_number] => 
+                                    [speaker] => PAROLLES
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:53:32,347] [2571] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:133) - 该次查询一共匹配 180 条
+[2018-06-13 16:53:32,348] [2571] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:134) - Array
+(
+    [took] => 26
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 180
+            [max_score] => 6.520256
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 7446
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 7447
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 26
+                                    [line_number] => 
+                                    [speaker] => DUCHESS
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 8317
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 8318
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 11
+                                    [line_number] => 
+                                    [speaker] => KING HENRY VI
+                                    [text_entry] => ACT IV
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 9522
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 9523
+                                    [play_name] => Henry VI Part 3
+                                    [speech_number] => 5
+                                    [line_number] => 
+                                    [speaker] => WARWICK
+                                    [text_entry] => ACT I
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 11496
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 11497
+                                    [play_name] => Henry VI Part 3
+                                    [speech_number] => 71
+                                    [line_number] => 
+                                    [speaker] => WARWICK
+                                    [text_entry] => ACT IV
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 12112
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 12113
+                                    [play_name] => Henry VI Part 3
+                                    [speech_number] => 17
+                                    [line_number] => 
+                                    [speaker] => GLOUCESTER
+                                    [text_entry] => ACT V
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 16:54:26,606] [2576] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:133) - 该次查询一共匹配 16 条
+[2018-06-13 16:54:26,606] [2576] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:134) - Array
+(
+    [took] => 44
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 16
+            [max_score] => 6.520256
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 7446
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 7447
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 26
+                                    [line_number] => 
+                                    [speaker] => DUCHESS
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 8317
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 8318
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 11
+                                    [line_number] => 
+                                    [speaker] => KING HENRY VI
+                                    [text_entry] => ACT IV
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 9522
+                            [_score] => 6.520256
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 9523
+                                    [play_name] => Henry VI Part 3
+                                    [speech_number] => 5
+                                    [line_number] => 
+                                    [speaker] => WARWICK
+                                    [text_entry] => ACT I
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 645
+                            [_score] => 6.3743405
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 646
+                                    [play_name] => Henry IV
+                                    [speech_number] => 54
+                                    [line_number] => 
+                                    [speaker] => HOTSPUR
+                                    [text_entry] => ACT II
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 1547
+                            [_score] => 6.3743405
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 1548
+                                    [play_name] => Henry IV
+                                    [speech_number] => 198
+                                    [line_number] => 2.4.532
+                                    [speaker] => PETO
+                                    [text_entry] => ACT III
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+[2018-06-13 17:03:23,067] [2588] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:134) - 该次查询一共匹配 16 条
+[2018-06-13 17:03:23,067] [2588] INFO  main.es_query(/Users/zhulinfeng/Desktop/phpProject/php4es/src/main/query.php:135) - Array
+(
+    [took] => 41
+    [timed_out] => 
+    [_shards] => Array
+        (
+            [total] => 3
+            [successful] => 3
+            [failed] => 0
+        )
+
+    [hits] => Array
+        (
+            [total] => 16
+            [max_score] => 
+            [hits] => Array
+                (
+                    [0] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 9522
+                            [_score] => 
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 9523
+                                    [play_name] => Henry VI Part 3
+                                    [speech_number] => 5
+                                    [line_number] => 
+                                    [speaker] => WARWICK
+                                    [text_entry] => ACT I
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 9523
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 9142
+                            [_score] => 
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 9143
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 10
+                                    [line_number] => 
+                                    [speaker] => IDEN
+                                    [text_entry] => ACT V
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 9143
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 8317
+                            [_score] => 
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 8318
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 11
+                                    [line_number] => 
+                                    [speaker] => KING HENRY VI
+                                    [text_entry] => ACT IV
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 8318
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 7446
+                            [_score] => 
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 7447
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 26
+                                    [line_number] => 
+                                    [speaker] => DUCHESS
+                                    [text_entry] => ACT III
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 7447
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [_index] => shakespeare
+                            [_type] => record
+                            [_id] => 6906
+                            [_score] => 
+                            [_source] => Array
+                                (
+                                    [type] => act
+                                    [line_id] => 6907
+                                    [play_name] => Henry VI Part 2
+                                    [speech_number] => 22
+                                    [line_number] => 
+                                    [speaker] => YORK
+                                    [text_entry] => ACT II
+                                )
+
+                            [sort] => Array
+                                (
+                                    [0] => 6907
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
