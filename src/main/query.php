@@ -72,11 +72,6 @@ function es_query($index_name, $type_name, $options=null)
         $query['match_all'] = '';
     }
 
-    if (isset($options['select_fields'])
-        && $options['select_fields'] != null)
-    {
-        $query['_source'] = $options['select_fields'];
-    }
 
     if (isset($options['must'])
         && $options['must'] != null)
@@ -124,9 +119,14 @@ function es_query($index_name, $type_name, $options=null)
             'query' => $query,
             'from' => $options['from'],
             'size' => $options['size'],
-            'sort' => $options['sort']
+            'sort' => $options['sort'],
+            '_source' => isset($options['_source']) ? $options['_source'] : ''
         ]
     ];
+    if (!isset($options['_source']))
+    {
+        unset($params['body']['_source']);
+    }
 
     //print_r($params); exit();
     try {
@@ -137,3 +137,90 @@ function es_query($index_name, $type_name, $options=null)
         $logger->error($e);
     }
 }
+
+function es_fuzzy_query($index_name, $type_name, $value)
+{
+    global $es_params, $logger;
+    $client = ClientBuilder::create()->setHosts($es_params)->build();
+
+    if (is_array($value) && count($value) == 1)
+    {
+        foreach ($value as $k => $v)
+        {
+            $params = [
+                'index' => $index_name,
+                'type' => $type_name,
+                'body' => [
+                    'query' => [
+                        'fuzzy' => [
+                            $k => [
+                                'value' => $v,
+                                'fuzziness' => 1
+                            ]
+                        ]
+                    ]
+                ]
+            ];
+            //print_r($params); exit();
+            $response = $client->search($params);
+            $logger->info($response);
+            $logger->info('是不是想找' . $k .'=>' .$response['hits']['hits'][0]['_source'][$k]);
+        }
+    }
+
+}
+
+function es_wildcard_query($index_name, $type_name, $value)
+{
+    global $es_params, $logger;
+    $client = ClientBuilder::create()->setHosts($es_params)->build();
+
+    if (is_array($value) && count($value) == 1)
+    {
+        foreach ($value as $k => $v)
+        {
+            $params = [
+                'index' => $index_name,
+                'type' => $type_name,
+                'body' => [
+                    'query' => [
+                        'wildcard' => [
+                            $k => $v
+                        ]
+                    ]
+                ]
+            ];
+            //print_r($params); exit();
+            $response = $client->search($params);
+            $logger->info($response);
+        }
+    }
+}
+
+function es_regex_query($index_name, $type_name, $value)
+{
+    global $es_params, $logger;
+    $client = ClientBuilder::create()->setHosts($es_params)->build();
+
+    if (is_array($value) && count($value) == 1)
+    {
+        foreach ($value as $k => $v)
+        {
+            $params = [
+                'index' => $index_name,
+                'type' => $type_name,
+                'body' => [
+                    'query' => [
+                        'regexp' => [
+                            $k => $v
+                        ]
+                    ]
+                ]
+            ];
+            //print_r($params); exit();
+            $response = $client->search($params);
+            $logger->info($response);
+        }
+    }
+}
+
